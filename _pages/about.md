@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/), supurvised by [Prof. Tao Peng](https://web.suda.edu.cn/pt/).
+I am currently a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/), supervised by [Prof. Tao Peng](https://web.suda.edu.cn/pt/).
 
 Now I'm about to pursue my graduate studies at [School of Artificial Intelligence and Data Science](https://saids.ustc.edu.cn/main.htm), [University of Science and Technology of China](https://www.ustc.edu.cn/)(USTC), focusing on deep learning for speech processing.
 
