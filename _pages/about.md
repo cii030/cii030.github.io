@@ -1,13 +1,14 @@
 ---
 permalink: /
-title: "About Me"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I'm a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/). My research interest includes computer vision and Medical Image Analysis. I'm about to pursue my graduate studies at the University of Science and Technology of China, focusing on deep learning for speech processing.
+I am currently a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/), supurvised by [Prof.Tao Peng](https://web.suda.edu.cn/pt/).<br /> 
+Now I'm about to pursue my graduate studies at [School of Artificial Intelligence and Data Science](https://saids.ustc.edu.cn/main.htm), [University of Science and Technology of China](https://www.ustc.edu.cn/), focusing on deep learning for speech processing.
 
 A data-driven personal website
 ======
