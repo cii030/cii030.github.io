@@ -7,10 +7,10 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/), supurvised by [Prof.Tao Peng](https://web.suda.edu.cn/pt/).<br /> 
+I am currently a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/), supurvised by [Prof. Tao Peng](https://web.suda.edu.cn/pt/).<br /> 
 Now I'm about to pursue my graduate studies at [School of Artificial Intelligence and Data Science](https://saids.ustc.edu.cn/main.htm), [University of Science and Technology of China](https://www.ustc.edu.cn/), focusing on deep learning for speech processing.
 
-A data-driven personal website
+Research Interest
 ======
 Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
