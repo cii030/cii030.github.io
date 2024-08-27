@@ -20,4 +20,4 @@ Research Interest
 Publications
 ------------
 **Conferences**
-- **Wu, F.**, Chen, H., Li, Q., Peng, T. (2024, July). 3D Partial U-Net: A Lightweight ConvNet for Head and Neck Lymph Node Segmentation. In: 2024 International Conference on Intelligent Computing (pp. 335–346). Springer, Cham. **(CCF C, oral)**
+- **Wu, F.**, Chen, H., Li, Q., Peng, T. (2024, July). 3D Partial U-Net: A Lightweight ConvNet for Head and Neck Lymph Node Segmentation. In: 2024 International Conference on Intelligent Computing (pp. 335–346). Springer, Singapore. **(CCF C, oral)**
