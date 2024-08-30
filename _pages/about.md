@@ -14,8 +14,8 @@ Now I'm about to pursue my graduate studies at [School of Artificial Intelligenc
 Research Interest
 ---------
 - Multi-modality data analysis
-- Computer vision
-- Medical image processing
+- Speech and Acoustics
+- Medical Image Processing
 
 Publications
 ------------
