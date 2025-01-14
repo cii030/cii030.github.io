@@ -7,15 +7,21 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/), supervised by [Prof. Tao Peng](https://web.suda.edu.cn/pt/).
+I am currently a fourth year undergraduate student from [School of Future Science and Engineering](https://future.suda.edu.cn/main.htm), [Soochow University](https://www.suda.edu.cn/).
 
-Now I'm about to pursue my graduate studies at [School of Artificial Intelligence and Data Science](https://saids.ustc.edu.cn/main.htm), [University of Science and Technology of China](https://www.ustc.edu.cn/)(USTC), focusing on deep learning for speech processing.
+Now I'm about to pursue my graduate studies at [School of Artificial Intelligence and Data Science](https://saids.ustc.edu.cn/main.htm), [University of Science and Technology of China](https://www.ustc.edu.cn/)(USTC), focusing on LLM. I am fortunate to be advised by [Prof. Jun Du](https://faculty.ustc.edu.cn/dujun/zh_CN/index.htm)
 
 Research Interest
 ---------
+- LLM Reasoning
 - Multi-modality data analysis
-- Speech and Acoustics
 - Medical Image Processing
+
+Internship
+---------
+- **Research Assistant in LLMs, iFLYTEK(Hefei, China)**
+Nov 2024 - Present
+Researched on LLM Reasoning.
 
 Publications
 ------------
