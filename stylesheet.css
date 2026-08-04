@@ -22,8 +22,8 @@ body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(circle at 12% 4%, rgba(255, 205, 112, 0.24), transparent 25rem),
-    linear-gradient(180deg, var(--paper-deep) 0, var(--paper) 32rem, #fff 100%);
+    radial-gradient(circle at 10% 0%, rgba(255, 205, 112, 0.18), transparent 22rem),
+    linear-gradient(180deg, var(--paper-deep) 0, var(--paper) 25rem, #fff 100%);
   font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 15px;
   line-height: 1.68;
@@ -66,7 +66,7 @@ a {
 }
 
 .page-shell {
-  width: min(880px, calc(100% - 40px));
+  width: min(820px, calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -76,11 +76,11 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(220px, 0.72fr);
-  gap: 64px;
+  grid-template-columns: minmax(0, 1.6fr) minmax(210px, 0.68fr);
+  gap: 48px;
   align-items: center;
-  min-height: 680px;
-  padding: 72px 0 64px;
+  min-height: 0;
+  padding: 58px 0 50px;
 }
 
 .eyebrow,
@@ -104,19 +104,26 @@ h2,
 }
 
 h1 {
-  margin: 0 0 26px;
-  font-size: clamp(50px, 7vw, 76px);
-  line-height: 0.95;
+  margin: 0 0 24px;
+  font-size: clamp(38px, 5vw, 48px);
+  line-height: 1.08;
 }
 
-h1 span {
-  display: block;
-  margin-top: 12px;
+h1 .name-divider {
+  margin: 0 0.18em;
+  color: #c9b9a8;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.72em;
+  font-weight: 400;
+}
+
+h1 .name-cn {
   color: var(--accent-dark);
   font-family: "DM Sans", sans-serif;
-  font-size: 0.31em;
+  font-size: 0.56em;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.08em;
+  vertical-align: 0.08em;
 }
 
 .hero-copy > p:not(.eyebrow) {
@@ -127,7 +134,7 @@ h1 span {
 
 .hero-copy .lead {
   color: var(--ink);
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .research-tags {
@@ -183,7 +190,7 @@ h1 span {
 .portrait-wrap {
   position: relative;
   margin: 0;
-  padding: 18px 0 0 18px;
+  padding: 14px 0 0 14px;
 }
 
 .portrait-wrap img {
@@ -192,16 +199,16 @@ h1 span {
   display: block;
   width: 100%;
   height: auto;
-  border: 9px solid rgba(255, 255, 255, 0.86);
-  border-radius: 18px;
+  border: 7px solid rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
   filter: sepia(0.08) contrast(1.02);
   box-shadow: var(--shadow);
 }
 
 .portrait-backdrop {
   position: absolute;
-  inset: 0 18px 24px 0;
-  border-radius: 18px;
+  inset: 0 14px 20px 0;
+  border-radius: 10px;
   background: linear-gradient(145deg, #f4b344, #e47917);
   transform: rotate(-3deg);
 }
@@ -218,26 +225,32 @@ h1 span {
 }
 
 .content-section {
-  padding: 62px 0;
+  padding: 48px 0;
   border-top: 1px solid var(--line);
 }
 
 .section-heading {
   display: flex;
   align-items: baseline;
-  gap: 18px;
-  margin-bottom: 30px;
+  gap: 0;
+  margin-bottom: 26px;
 }
 
 .section-index {
-  min-width: 24px;
-  color: var(--accent);
+  display: none;
 }
 
-h2 {
+.section-heading h2 {
   margin: 0;
-  font-size: clamp(31px, 5vw, 43px);
-  line-height: 1;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: clamp(24px, 4vw, 29px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  text-decoration: underline;
+  text-decoration-color: #f3b34a;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.22em;
 }
 
 .news-list {
@@ -248,25 +261,31 @@ h2 {
 
 .news-list li {
   display: grid;
-  grid-template-columns: 118px minmax(0, 1fr);
-  gap: 22px;
-  padding: 17px 0 17px 18px;
-  border-left: 2px solid #f5d398;
-  border-bottom: 1px solid rgba(42, 30, 20, 0.08);
+  grid-template-columns: 94px minmax(0, 1fr);
+  gap: 16px;
+  padding: 11px 10px;
+  border-left: 0;
+  border-bottom: 1px solid rgba(42, 30, 20, 0.07);
+  border-radius: 8px;
   transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
 .news-list li:hover {
-  border-left-color: var(--accent);
   background: rgba(255, 247, 232, 0.58);
   transform: translateX(3px);
 }
 
 .news-list time {
+  align-self: start;
+  justify-self: start;
+  padding: 2px 7px;
+  border: 1px solid rgba(74, 61, 48, 0.28);
+  border-radius: 3px;
+  background: rgba(255, 249, 231, 0.92);
   color: var(--accent-dark);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .news-list p {
@@ -277,7 +296,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: -6px 0 24px 42px;
+  justify-content: center;
+  margin: -4px 0 24px;
 }
 
 .filter-button {
@@ -318,18 +338,18 @@ h2 {
 
 .publication-card {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 26px;
-  padding: 19px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 22px;
+  padding: 16px;
+  border: 1px solid rgba(42, 30, 20, 0.16);
+  border-radius: 9px;
   background: var(--card);
-  box-shadow: 0 8px 24px rgba(88, 52, 17, 0.045);
+  box-shadow: 0 4px 16px rgba(88, 52, 17, 0.035);
 }
 
 .publication-card.featured {
-  border-color: rgba(233, 139, 22, 0.34);
-  background: linear-gradient(100deg, rgba(255, 246, 220, 0.88), rgba(255, 255, 255, 0.82));
+  border-color: rgba(202, 156, 40, 0.32);
+  background: #fffde5;
 }
 
 .publication-card[hidden] {
@@ -343,7 +363,7 @@ h2 {
   padding: 10px;
   overflow: hidden;
   border: 1px solid rgba(74, 61, 48, 0.12);
-  border-radius: 10px;
+  border-radius: 6px;
   background: #fff;
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
@@ -407,14 +427,14 @@ h2 {
 }
 
 .scholar-note {
-  margin: 20px 0 0 42px;
+  margin: 20px 0 0;
   color: var(--muted);
   font-size: 12px;
 }
 
 .timeline {
   position: relative;
-  margin-left: 41px;
+  margin-left: 0;
 }
 
 .timeline::before {
@@ -474,7 +494,63 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
-  margin-left: 42px;
+  margin-left: 0;
+}
+
+.service-honors-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.78fr) minmax(0, 1.5fr);
+  gap: 42px;
+}
+
+.service-honors-grid article {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.section-label {
+  margin: 0 0 13px;
+  color: var(--accent-dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.service-honors-grid h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.service-honors-grid article > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.honors-list {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.honors-list li {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 10px;
+  color: #3f3933;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.honors-list time {
+  color: var(--accent-dark);
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .project-card {
@@ -519,7 +595,7 @@ h2 {
 .section-nav {
   position: fixed;
   top: 50%;
-  left: calc(50% + 495px);
+  left: calc(50% + 465px);
   z-index: 20;
   display: flex;
   flex-direction: column;
@@ -608,7 +684,7 @@ h2 {
 .footer-inner {
   position: relative;
   z-index: 1;
-  width: min(880px, calc(100% - 40px));
+  width: min(820px, calc(100% - 40px));
   margin: 0 auto;
   padding: 84px 0 36px;
 }
@@ -717,7 +793,7 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(48px, 15vw, 68px);
+    font-size: clamp(38px, 11vw, 48px);
   }
 
   .content-section {
@@ -750,6 +826,11 @@ h2 {
 
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .service-honors-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .news-list li {
