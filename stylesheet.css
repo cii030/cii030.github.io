@@ -505,6 +505,47 @@ h1 .name-cn {
   font-weight: 600;
 }
 
+.experience-entry {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 15px;
+  align-items: start;
+}
+
+.organization-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
+  border: 1px solid rgba(42, 30, 20, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(88, 52, 17, 0.05);
+}
+
+.organization-mark img {
+  display: block;
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.organization-mark-ustc img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  max-width: none;
+  height: 54px;
+}
+
+.organization-mark-iflytek img {
+  width: 42px;
+  height: 42px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
