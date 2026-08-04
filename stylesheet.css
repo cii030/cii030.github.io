@@ -135,9 +135,11 @@ h1 span {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 26px;
+  padding: 0;
+  list-style: none;
 }
 
-.research-tags span,
+.research-tags li,
 .filter-button {
   border: 1px solid rgba(138, 76, 9, 0.2);
   border-radius: 999px;
@@ -146,7 +148,7 @@ h1 span {
   font-size: 12px;
 }
 
-.research-tags span {
+.research-tags li {
   padding: 5px 11px;
 }
 
@@ -360,6 +362,10 @@ h2 {
   background: linear-gradient(145deg, #b85c0c, #ef9a24 70%, #f9c15a);
 }
 
+.paper-mark-redippo {
+  background: linear-gradient(145deg, #44245f, #8254a2 68%, #c69bdd);
+}
+
 .paper-mark-vision {
   background: linear-gradient(145deg, #20374d, #3f7184 70%, #74a5a7);
 }
@@ -368,6 +374,10 @@ h2 {
   font-family: "Newsreader", Georgia, serif;
   font-size: 34px;
   line-height: 1;
+}
+
+.paper-mark .long-title {
+  font-size: 25px;
 }
 
 .paper-mark small {

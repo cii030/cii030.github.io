@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -50,18 +50,18 @@
           I received my B.Eng. from the School of Future Science and Engineering at Soochow University.
         </p>
 
-        <div class="research-tags" aria-label="Research interests">
-          <span>LLM Reasoning</span>
-          <span>Agentic RL</span>
-          <span>Post-training</span>
-        </div>
+        <ul class="research-tags">
+          <li>LLM Reasoning</li>
+          <li>Agentic RL</li>
+          <li>Post-training</li>
+        </ul>
 
-        <div class="contact-links" aria-label="Profile links">
+        <nav class="contact-links" aria-label="Profile links">
           <a href="mailto:wufei0422@126.com">Email</a>
           <a href="assets/Curriculum_Vitae.pdf">CV</a>
           <a href="https://scholar.google.com/citations?user=r2b-4gIAAAAJ&amp;hl=en">Google Scholar</a>
           <a href="https://github.com/cii030">GitHub</a>
-        </div>
+        </nav>
       </div>
 
       <figure class="portrait-wrap">
@@ -78,8 +78,12 @@
       </div>
       <ol class="news-list">
         <li>
-          <time datetime="2026-01">Jan. 2026</time>
-          <p>Released <strong>Step Potential Advantage Estimation</strong>, our work on efficient mathematical reasoning with intermediate confidence and correctness.</p>
+          <time datetime="2026-07-30">Jul. 2026</time>
+          <p>Released <strong>ReDiPPO</strong>, a reference-guided and discrepancy-aware PPO framework for mathematical reasoning.</p>
+        </li>
+        <li>
+          <time datetime="2026-07">Jul. 2026</time>
+          <p><strong>Step Potential Advantage Estimation</strong> appeared in <strong>Findings of ACL 2026</strong>.</p>
         </li>
         <li>
           <time datetime="2024-11">Nov. 2024</time>
@@ -99,24 +103,41 @@
       </div>
 
       <div class="publication-filters" role="group" aria-label="Filter publications">
-        <button class="filter-button active" type="button" data-filter="all">All <span>2</span></button>
-        <button class="filter-button" type="button" data-filter="llm">LLM <span>1</span></button>
+        <button class="filter-button active" type="button" data-filter="all">All <span>3</span></button>
+        <button class="filter-button" type="button" data-filter="llm">LLM <span>2</span></button>
         <button class="filter-button" type="button" data-filter="vision">Medical vision <span>1</span></button>
       </div>
 
       <div class="publication-list">
+        <article class="publication-card featured" data-category="llm">
+          <div class="paper-mark paper-mark-redippo" aria-hidden="true">
+            <span class="long-title">ReDiPPO</span>
+            <small>Value calibration · PPO</small>
+          </div>
+          <div class="publication-body">
+            <div class="publication-meta"><span>Preprint</span><time datetime="2026">2026</time></div>
+            <h3>ReDiPPO: Reference-Guided Value Calibration and Discrepancy-Aware Token Reweighting for Mathematical Reasoning</h3>
+            <p class="authors">Zhenrong Zhang, <strong>Fei Wu</strong>, Jun Du, Jianshu Zhang, Si Wei</p>
+            <p>Uses a reference-guided critic and token-level critic discrepancies to improve value estimation and reweight PPO advantages at difficult reasoning states.</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2607.27631">Paper</a>
+              <a href="https://github.com/cii030/ReDiPPO">Code</a>
+            </div>
+          </div>
+        </article>
+
         <article class="publication-card featured" data-category="llm">
           <div class="paper-mark paper-mark-llm" aria-hidden="true">
             <span>SPAE</span>
             <small>Reasoning · RL</small>
           </div>
           <div class="publication-body">
-            <div class="publication-meta"><span>Preprint</span><time datetime="2026">2026</time></div>
+            <div class="publication-meta"><span>Findings of ACL</span><time datetime="2026">2026</time></div>
             <h3>Step Potential Advantage Estimation: Harnessing Intermediate Confidence and Correctness for Efficient Mathematical Reasoning</h3>
-            <p class="authors"><strong>Fei Wu</strong>, Z. Zhang, Q. Chang, et al.</p>
+            <p class="authors"><strong>Fei Wu</strong>, Zhenrong Zhang, Qikai Chang, Jianshu Zhang, Quan Liu, Jun Du</p>
             <p>Uses intermediate confidence and correctness signals to improve reinforcement learning for mathematical reasoning.</p>
             <div class="paper-links">
-              <a href="https://arxiv.org/abs/2601.03823">Paper</a>
+              <a href="https://aclanthology.org/2026.findings-acl.317/">Paper</a>
               <a href="https://github.com/cii030/SPAE-RL">Code</a>
             </div>
           </div>
@@ -181,6 +202,12 @@
         <h2 id="projects-title">Open-source projects</h2>
       </div>
       <div class="project-grid">
+        <a class="project-card" href="https://github.com/cii030/ReDiPPO">
+          <span class="project-arrow" aria-hidden="true">↗</span>
+          <p class="project-kicker">Value models · Token-level credit</p>
+          <h3>ReDiPPO</h3>
+          <p>Official implementation of reference-guided value calibration and discrepancy-aware token reweighting.</p>
+        </a>
         <a class="project-card" href="https://github.com/cii030/SPAE-RL">
           <span class="project-arrow" aria-hidden="true">↗</span>
           <p class="project-kicker">Reasoning · Reinforcement learning</p>
