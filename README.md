@@ -1,4 +1,27 @@
-# Academic Pages
+# Fei Wu — Personal Homepage
+
+Personal academic homepage for [cii030.github.io](https://cii030.github.io/), based on the clean single-page structure of [academic-homepage-template](https://github.com/w-r-s/academic-homepage-template).
+
+The published site is a static GitHub Pages project. The active homepage is defined by `index.html` and `stylesheet.css`; the previous Jekyll source is retained in the repository for history.
+
+## Local preview
+
+```bash
+python3 -m http.server 8080 --bind 127.0.0.1
+```
+
+Then open `http://127.0.0.1:8080/`.
+
+## Update content
+
+- Biography, news, publications, experience, and project links: `index.html`
+- Colors, typography, layout, and responsive behavior: `stylesheet.css`
+- CV: `assets/Curriculum_Vitae.pdf`
+- Profile image: `images/head.png`
+
+---
+
+# Previous Academic Pages README
 
 ![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 
