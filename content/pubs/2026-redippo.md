@@ -2,6 +2,8 @@
 title: "ReDiPPO: Reference-Guided Value Calibration and Discrepancy-Aware Token Reweighting for Mathematical Reasoning"
 date: 2026-07-30
 authors: ["Zhenrong Zhang", "Fei Wu", "Jun Du", "Jianshu Zhang", "Si Wei"]
+equal_contributors: ["Zhenrong Zhang", "Fei Wu"]
+corresponding_authors: ["Jianshu Zhang"]
 venue: "Preprint"
 abbr: "Preprint"
 preview: "redippo-method-overview.png"

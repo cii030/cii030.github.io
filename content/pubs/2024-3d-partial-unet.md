@@ -2,7 +2,7 @@
 title: "3D Partial U-Net: A Lightweight ConvNet for Head and Neck Lymph Node Segmentation"
 date: 2024-07-01
 authors: ["Fei Wu", "Hao Chen", "Quan Li", "Tao Peng"]
-corresponding_authors: ["Tao Peng"]
+corresponding_authors: ["Quan Li", "Tao Peng"]
 venue: "International Conference on Intelligent Computing"
 abbr: "ICIC 2024"
 award: "Oral Presentation"
