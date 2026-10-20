@@ -20,7 +20,7 @@ Open `http://localhost:1313/`.
 
 ## Update content
 
-- Profile, experience, projects, service, and honors: `config.yml`
+- Profile, experience, and honors: `config.yml`
 - Biography: `content/about.md`
 - Publications: `content/pubs/`
 - News: `content/news/`
