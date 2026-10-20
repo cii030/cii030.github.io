@@ -63,10 +63,6 @@
           {{- if .Params.website }}<a href="{{ .Params.website }}" class="pub-link" target="_blank"><span>🌐 Website</span></a>{{- end }}
           {{- if .Params.code }}
             <a href="{{ .Params.code }}" class="pub-link" target="_blank"><span>💻 Code</span></a>
-            {{- $u := urls.Parse .Params.code -}}
-            {{- if eq $u.Host "github.com" -}}
-            <a href="{{ .Params.code }}" target="_blank" style="display: inline-flex; align-items: center;"><img src="https://img.shields.io/github/stars{{ $u.Path }}?style=social&label=Stars" alt="GitHub stars"></a>
-            {{- end -}}
           {{- end }}
         </div> {{/* end of publication-links */}}
       {{- end }} {{/* end of show_links */}}

@@ -34,22 +34,6 @@ params:
         description: "**Research Assistant in Large Language Models**, iFLYTEK, Hefei. Working on large language model post-training."
       - period: "Undergraduate"
         description: "**B.Eng.**, School of Future Science and Engineering, Soochow University."
-    projects:
-      - name: "ReDiPPO"
-        kicker: "Value models · Token-level credit"
-        description: "Official implementation of reference-guided value calibration and discrepancy-aware token reweighting."
-        url: "https://github.com/cii030/ReDiPPO"
-      - name: "SPAE-RL"
-        kicker: "Reasoning · Reinforcement learning"
-        description: "Official implementation of Step Potential Advantage Estimation for mathematical reasoning."
-        url: "https://github.com/cii030/SPAE-RL"
-      - name: "3D Partial U-Net"
-        kicker: "Medical image analysis"
-        description: "Lightweight 3D segmentation models and experiments for head and neck lymph nodes."
-        url: "https://github.com/cii030/3D-Partial-U-Net"
-    service:
-      - role: "Invited Reviewer"
-        venues: "PRICAI 2023, *Signal Processing*, and *Medical Physics*."
     awards:
       - year: "2023"
         name: "National 2nd Prize, 5th Global Campus AI Algorithm Elite Competition"

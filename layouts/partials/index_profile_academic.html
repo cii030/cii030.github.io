@@ -141,36 +141,6 @@
   </section>
   {{- end }}
 
-  {{- if site.Params.profileMode.projects }}
-  <section id="projects" class="home-section">
-    <h2>Open-source Projects</h2>
-    <div class="project-grid">
-      {{- range site.Params.profileMode.projects }}
-      <a class="project-card" href="{{ .url }}" target="_blank" rel="noopener">
-        <span class="project-arrow" aria-hidden="true">↗</span>
-        {{- if .kicker }}<p class="project-kicker">{{ .kicker }}</p>{{- end }}
-        <h3>{{ .name }}</h3>
-        {{- if .description }}<p>{{ .description }}</p>{{- end }}
-      </a>
-      {{- end }}
-    </div>
-  </section>
-  {{- end }}
-
-  {{- if site.Params.profileMode.service }}
-  <section id="service" class="home-section">
-    <h2>Academic Service</h2>
-    <div class="home-list">
-      {{- range site.Params.profileMode.service }}
-      <div class="home-item service-item">
-        <strong>{{ .role }}</strong>
-        <span>{{ .venues | markdownify }}</span>
-      </div>
-      {{- end }}
-    </div>
-  </section>
-  {{- end }}
-
   {{- if site.Params.profileMode.awards }}
   <section id="awards" class="home-section">
     <h2>Selected Awards</h2>
@@ -205,12 +175,6 @@
           {{- end }}
           {{- if site.Params.profileMode.experience }}
           <li><a href="#experience">Experience</a></li>
-          {{- end }}
-          {{- if site.Params.profileMode.projects }}
-          <li><a href="#projects">Open-source Projects</a></li>
-          {{- end }}
-          {{- if site.Params.profileMode.service }}
-          <li><a href="#service">Academic Service</a></li>
           {{- end }}
           {{- if site.Params.profileMode.awards }}
           <li><a href="#awards">Awards & Honors</a></li>
