@@ -1,0 +1,148 @@
+baseURL: "https://cii030.github.io/"
+title: "Fei Wu | 吴非"
+copyright: "© Fei Wu"
+theme: [PaperMod-academic-patch, hugo-PaperMod]
+
+params:
+  env: production
+  description: "Fei Wu is an M.S. student at USTC researching LLM reasoning, agentic reinforcement learning, and post-training."
+  author: "Fei Wu"
+  defaultTheme: auto
+  displayFullLangName: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  images: ["images/og-homepage.png"]
+
+  profileMode:
+    enabled: true
+    academic: true
+    showToc: true
+    sideBySideAbout: true
+    imageUrl: "images/head.png"
+    imageTitle: "Fei Wu"
+    imageWidth: 200
+    imageHeight: 200
+    title: "Fei Wu | 吴非"
+    nameInPub: "Fei Wu"
+    subtitle: "M.S. Student · LLM Reasoning & Agentic RL"
+    affiliation: "University of Science and Technology of China"
+    email: "wufei0422@126.com"
+    experience:
+      - period: "2024 – Present"
+        description: "**M.S. Student**, School of Artificial Intelligence and Data Science, University of Science and Technology of China. Research on LLM reasoning and agentic reinforcement learning; advised by [Prof. Jun Du](https://faculty.ustc.edu.cn/dujun/zh_CN/index.htm)."
+      - period: "Nov. 2024 – Present"
+        description: "**Research Assistant in Large Language Models**, iFLYTEK, Hefei. Working on large language model post-training."
+      - period: "Undergraduate"
+        description: "**B.Eng.**, School of Future Science and Engineering, Soochow University."
+    projects:
+      - name: "ReDiPPO"
+        kicker: "Value models · Token-level credit"
+        description: "Official implementation of reference-guided value calibration and discrepancy-aware token reweighting."
+        url: "https://github.com/cii030/ReDiPPO"
+      - name: "SPAE-RL"
+        kicker: "Reasoning · Reinforcement learning"
+        description: "Official implementation of Step Potential Advantage Estimation for mathematical reasoning."
+        url: "https://github.com/cii030/SPAE-RL"
+      - name: "3D Partial U-Net"
+        kicker: "Medical image analysis"
+        description: "Lightweight 3D segmentation models and experiments for head and neck lymph nodes."
+        url: "https://github.com/cii030/3D-Partial-U-Net"
+    service:
+      - role: "Invited Reviewer"
+        venues: "PRICAI 2023, *Signal Processing*, and *Medical Physics*."
+    awards:
+      - year: "2023"
+        name: "National 2nd Prize, 5th Global Campus AI Algorithm Elite Competition"
+      - year: "2023"
+        name: "2nd Prize, 14th Lanqiao Cup Python Programming University A Group"
+      - year: "2022–23"
+        name: "Soochow University Merit Student"
+      - year: "2022–23"
+        name: "Soochow University Grand Prize Scholarship (top 4%)"
+
+  socialIcons:
+    - name: email
+      title: Email
+      url: "mailto:wufei0422@126.com"
+    - name: cv
+      title: CV
+      url: "/files/Curriculum_Vitae.pdf"
+    - name: googlescholar
+      title: Google Scholar
+      url: "https://scholar.google.com/citations?user=r2b-4gIAAAAJ&hl=en"
+    - name: github
+      title: GitHub
+      url: "https://github.com/cii030"
+
+  assets:
+    disableHLJS: true
+    favicon: "assets/favicon.ico"
+
+cascade:
+  - _target:
+      path: /news/**
+    build:
+      render: never
+      list: local
+  - _target:
+      path: /pubs/**
+    build:
+      render: never
+      list: local
+
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 10
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: About
+          url: /
+          weight: 5
+        - name: Publications
+          url: pubs/
+          weight: 8
+        - name: News
+          url: news/
+          weight: 9
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
