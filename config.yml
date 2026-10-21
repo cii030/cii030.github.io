@@ -108,9 +108,12 @@ languages:
         - name: Publications
           url: pubs/
           weight: 8
+        - name: Blogs
+          url: "https://www.zhihu.com/people/ciyi-72/posts"
+          weight: 9
         - name: News
           url: news/
-          weight: 9
+          weight: 10
 
 outputs:
   home:
