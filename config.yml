@@ -27,13 +27,14 @@ params:
     subtitle: "M.S. Student · LLM Reasoning & Agentic RL"
     affiliation: "University of Science and Technology of China"
     email: "wufei0422@126.com"
-    experience:
+    education:
       - period: "2024 – Present"
         description: "**M.S. Student**, School of Artificial Intelligence and Data Science, University of Science and Technology of China. Research on LLM reasoning and agentic reinforcement learning; advised by [Prof. Jun Du](https://faculty.ustc.edu.cn/dujun/zh_CN/index.htm)."
-      - period: "Nov. 2024 – Present"
-        description: "**Research Assistant in Large Language Models**, iFLYTEK, Hefei. Working on large language model post-training."
       - period: "Undergraduate"
         description: "**B.Eng.**, School of Future Science and Engineering, Soochow University."
+    internships:
+      - period: "Nov. 2024 – Present"
+        description: "**Research Assistant in Large Language Models**, iFLYTEK, Hefei. Working on large language model post-training."
     awards:
       - year: "2023"
         name: "National 2nd Prize, 5th Global Campus AI Algorithm Elite Competition"
