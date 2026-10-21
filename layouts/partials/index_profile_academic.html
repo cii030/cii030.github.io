@@ -123,11 +123,29 @@
   </section>
   {{- end }}
 
-  {{- if site.Params.profileMode.experience }}
-  <section id="experience" class="home-section">
-    <h2>Experience</h2>
+  {{- if site.Params.profileMode.education }}
+  <section id="education" class="home-section">
+    <h2>Education</h2>
     <div class="home-list">
-      {{- range site.Params.profileMode.experience }}
+      {{- range site.Params.profileMode.education }}
+      <div class="home-item">
+        <div class="experience-details">
+          {{- if .description }}
+          <p class="experience-description">{{ .description | markdownify }}</p>
+          {{- end }}
+        </div>
+        <div class="experience-period">{{ .period }}</div>
+      </div>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{- if site.Params.profileMode.internships }}
+  <section id="internships" class="home-section">
+    <h2>Internships</h2>
+    <div class="home-list">
+      {{- range site.Params.profileMode.internships }}
       <div class="home-item">
         <div class="experience-details">
           {{- if .description }}
@@ -173,8 +191,11 @@
           {{- if (site.GetPage "news").Pages }}
           <li><a href="#news">Latest News</a></li>
           {{- end }}
-          {{- if site.Params.profileMode.experience }}
-          <li><a href="#experience">Experience</a></li>
+          {{- if site.Params.profileMode.education }}
+          <li><a href="#education">Education</a></li>
+          {{- end }}
+          {{- if site.Params.profileMode.internships }}
+          <li><a href="#internships">Internships</a></li>
           {{- end }}
           {{- if site.Params.profileMode.awards }}
           <li><a href="#awards">Awards & Honors</a></li>
